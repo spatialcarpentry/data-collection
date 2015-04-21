@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Data Collection
 tagline: Supporting tagline
 ---
 {% include JB/setup %}

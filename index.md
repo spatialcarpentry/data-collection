@@ -8,6 +8,7 @@ tagline: Supporting tagline
 ## Goals/Objectives
 
 By the end of this module you will:
+
   - get familiar with spatial data types
   - understand what a projection is
   - recognize the difference between raster and vector data

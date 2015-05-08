@@ -3,7 +3,7 @@ title: "Buffer Exercise"
 layout: post
 category : Get the Data
 tagline: 
-tags : [analysis, vector, buffer]
+tags : [analysis, vector, buffer, projections, CRS]
 ---
 
 {% include JB/setup %}

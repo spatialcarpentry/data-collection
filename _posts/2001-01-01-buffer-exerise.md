@@ -3,50 +3,32 @@ title: "Buffer Exercise"
 layout: post
 category : Get the Data
 tagline: 
-tags : [applications, qgis, quantumgis]
+tags : [analysis, vector, buffer]
 ---
 
 {% include JB/setup %}
 
+#### Pre-requisites:
 
+- Setup
+- Basics
 
+#### Objecties: 
 
+1. Perform simple spatial function on vector data
+2. Further understand projections
 
-## Vector Analysis
+#### Data:
 
-### What this module covers: 
+iPlant Data Store: ``/path/to/exercise/folder``
 
- * Buffer polylines
- * Join census housing (home values) to census tracts (shapefile)
- * Intersecting vector layers
+1. [data one](link-to-data-one) 
 
+----
 
-### Objective: 
+## Performing a simple spatial function on vector data
 
-Quantify total home value at risk within landslide/mass-wasting and fautls.
-
-### Data Collection: (there needs to be instructions/quick lesson on each of the collection sources) 
-
- * <a href="http://factfinder.census.gov/faces/nav/jsf/pages/guided_search.xhtml" alt="Spatial Data Carpentry: Download Census housing data - American FactFinder" target="_blank">Census housing data - American FactFinder</a>
- * <a href="https://www.census.gov/geo/maps-data/data/tiger.html" alt="Spatial Data Carpentry: Download Census tract shapefile - TIGER data" target="_blank">Census tracts - TIGER Data</a>
- * <a href="http://earthquake.usgs.gov/hazards/qfaults" alt="Spatial Data Carpentry: Download USGS quaternary faults" target="_blank">Quaternary faults - USGS </a>
- * <a href="http://www.dnr.wa.gov/ResearchScience/Topics/GeosciencesData/Pages/gis_data.aspx" alt="Spatial Data Carpentry: Download seismogenic features" target="_blank">Washington seismogenic features - REQUIRES GDAL filegdb driver!</a>
- * <a href="http://nhd.usgs.gov/" alt="Spatial Data Carpentry: Download USGS National Hydrography Dataset - Washington" target="_blank">Washington streams/rivers - USGS National Hydrography Dataset</a>
-
- * faults_100k - [source]
- * [housing-data.zip]({{BASE_PATH}}{{ASSET_PATH}}/data/housing-data.zip)
-
-### Data Wrangling:
-
-#### Wrangle Census Data:
-
-Luckily, the Census data has already been wrangled. Census data can sometimes be tricky. 
-
-#### High-risk rules:
-
- * within 100m of fault lines
- * within 50m of rivers/streams
- * within soft geologic areas 
+Projection can make or break your research- the small things matter the most in spatial data scienece. This simple exercise will help visually explain projections (in QGIS, coordinate reference systems) and problems you may encounter during your work.
 
  1. Open QGIS and configure project workspace.
  1. Import data:

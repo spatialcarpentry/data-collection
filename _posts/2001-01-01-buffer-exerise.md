@@ -20,13 +20,13 @@ tags : [analysis, vector, buffer, projections, CRS]
 
 #### Data:
 
-iPlant Data Store: ``/path/to/exercise/folder``
+iPlant Data Store: <br>&nbsp;&nbsp;&nbsp;``/Community Data/aegis/Spatial-bootcamp/data-collection/buffer-exercise``
 
 1. [data one](link-to-data-one) 
 
 ----
 
-## Performing a simple spatial function on vector data
+## Performing a simple vector spatial function
 
 Projection can make or break your research- the small things matter the most in spatial data scienece. This simple exercise will help visually explain projections (in QGIS, coordinate reference systems) and problems you may encounter during your work.
 

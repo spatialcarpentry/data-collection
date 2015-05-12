@@ -5,14 +5,14 @@ tagline:
 ---
 {% include JB/setup %}
 
-## Goals/Objectives
+## Objectives
 
-By the end of this module you will:
+After completing this section, you will:
 
-  - get familiar with spatial data types
-  - understand what a projection is
-  - recognize the difference between raster and vector data
-  - understand basics of scale, resolution and scope
+1. Become familiar with spatial data types
+2. Understand what a projection is
+3. Recognize the difference between raster and vector data
+4. Understand basics of scale, resolution, and scope
 
 ## Topics
 

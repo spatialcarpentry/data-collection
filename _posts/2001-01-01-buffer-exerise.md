@@ -32,10 +32,7 @@ Projection can make or break your research- the small things matter the most in 
 
 This follow exercise covers a simple spatial function, the Buffer. Spatial functions are explained in later lessons.
 
- 1. Open QGIS and configure project workspace.
- 1. Import data:
-   * HINT: The project projection will default to the first layer that is added to the project (See lower right of image below: EPSG:2927).
-   * <em>Add Vector Layer: </em>![Spatial Data Bootcamp: Vector Analysis - add vector data]({{BASE_PATH}}{{ASSET_PATH}}/images/add-vector.png)<br>**fault_100k.shp**<br>
+ 1. Open QGIS and import ``wa_faults_100k.shp`` ![Spatial Data Bootcamp: Vector Analysis - add vector data]({{BASE_PATH}}{{ASSET_PATH}}/images/add-vector.png)<br>**fault_100k.shp**<br>
   <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-1.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-1.png" alt="Spatial Data Bootcamp: Vector Analysis - streams and faults"/>
  1. Buffer fault lines to 100m:
    * <em>Menu Bar > Vector > Geoprocessing Tools > Buffer(s)</em>
@@ -53,7 +50,7 @@ This follow exercise covers a simple spatial function, the Buffer. Spatial funct
    <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-5.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-5.png"  atl="Spatial Data Bootcamp: Vector Analysis - buffer vector"/>
  1. Confirm 100 meter buffer on faults:
    * Open measure tool ![Spatial Data Bootcamp: Vector Analysis - measure tool]({{BASE_PATH}}{{ASSET_PATH}}/images/measure-tool.png) and confirm 200 meter total width (100 meters * 2 = 200 meters)<br>
-   <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" alt="Spatial Data Bootcamp: Vector Analysis - measure faults buffer"/>
+   <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" alt="Spatial Data Bootcamp: Vector Analysis - measure faults buffer"/><br>You've now tackled a large issue related to map units. Move on to the next lesson. No need to save the document or files.
 
 References: 
 

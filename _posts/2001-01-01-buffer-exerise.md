@@ -20,7 +20,7 @@ tags : [analysis, vector, buffer, projections, CRS]
 
 #### Data:
 
-iRods access: <br>&nbsp;&nbsp;&nbsp;``/Community Data/aegis/Spatial-bootcamp/data-collection/buffer-exercise``
+iRods access: <br>&nbsp;&nbsp;&nbsp;``/iplant/home/shared/aegis/Spatial-bootcamp/data-collection/buffer-exercise``
 
 1. [Washington state faults - (wa_fault_100k.shp)](http://de.iplantcollaborative.org/dl/d/434DE989-91F4-4A29-BA17-7B08ADF2BFA2/wa_fault_100k.zip) 
 

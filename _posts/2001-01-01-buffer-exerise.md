@@ -28,7 +28,7 @@ iRods access: <br>&nbsp;&nbsp;&nbsp;``/iplant/home/shared/aegis/Spatial-bootcamp
 
 ## Visually explaining map units
 
-Projection can make or break your research- the small things matter the most in spatial data scienece. This simple exercise will help visually explain projections (in QGIS, coordinate reference systems) and problems you may encounter during your work.
+Projections can make or break your research- the small things matter the most in spatial data science. This simple exercise will help visually explain projections (in QGIS, coordinate reference systems) and problems you may encounter during your work.
 
 This follow exercise covers a simple spatial function, the Buffer. Spatial functions are explained in later lessons.
 
@@ -40,7 +40,7 @@ This follow exercise covers a simple spatial function, the Buffer. Spatial funct
  <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-2.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-2.png" alt="Spatial Data Bootcamp: Vector Analysis - buffer analysis"/>
    * <em>Zoom in to a buffer, close enough to see the width</em><br><br><img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-3.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-3.png" alt="Spatial Data Bootcamp: QGIS - buffered faults"/><br>
    * <em>Open the meaure tool</em> ![Spatial Data Bootcamp: Vector Analysis - measure tool]({{BASE_PATH}}{{ASSET_PATH}}/images/measure-tool.png)
-   * <em>Measure the width of the buffer.</em> Notice how the total width is only about 62 meters, or 200 feet (buffers both sides of line; 100 feet X 2 = 200 fetet). Current map units are determined by the CRS, in this case EPSG:2927 is in US feet and we need meters. Simply changing the CRS in Project Properties does not give us the correct results- this is still measured from EPSG:2927 US feet.<br>
+   * <em>Measure the width of the buffer.</em> Notice how the total width is only about 62 meters, or 200 feet (buffers both sides of line; 100 feet X 2 = 200 feet). Current map units are determined by the CRS, in this case EPSG:2927 is in US feet and we need meters. Simply changing the CRS in Project Properties does not give us the correct results- this is still measured from EPSG:2927 US feet.<br>
    <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-4.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-4.png" alt="Spatial Data Bootcamp: Vector Analysis - measure buffer"/><br><br>**Important:**<br>There are two methods to perfoming a buffer analysis on our shapefile. The problem here is that our CRS is EPSG:2927 (in US feet) and the buffer distance is based on map units (still US feet). The two methods are: convert 100 meters to US feet and use this value in the buffer analysis while maintaining EPSG:2927 (in US feet); OR, reproject the layer thus creating a new file with a CRS in meters, and then reprojecting back to EPSG:2927. We'll go with the former.<br><br>
  1. Now we need to perform the buffer analysis with the correct method. <em>Remove the incorrect buffer layer: fault_buffer_100m.shp</em>
  1. Convert 100 meters to feet... = 328.084 feet.

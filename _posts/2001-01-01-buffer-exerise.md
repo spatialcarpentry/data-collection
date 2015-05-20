@@ -18,7 +18,7 @@ tags : [analysis, vector, buffer, projections, CRS]
 1. Perform simple spatial function on vector data
 2. Further understand projections
 
-#### Exercise: [Buffer Exercise](link)
+#### Exercise: Why we should all check our data
 
 <!--
 
@@ -31,13 +31,12 @@ iRods access: <br>&nbsp;&nbsp;&nbsp;``/iplant/home/shared/aegis/Spatial-bootcamp
 
 ----
 
-## Visually explaining map units
+## Why we should all check our data beforehand
 
-Projections can make or break your research- the small things matter the most in spatial data science. This simple exercise will help visually explain projections (in QGIS, coordinate reference systems) and problems you may encounter during your work.
+Inspecting our data is before we attempt to perform any calculation, analysis, or spatial function is <em>very</em> important. To prove this, we are going to perform a simple buffer analysis. Spatial analyses are explained in <strong>Spatial Analysis</strong>.
 
-This follow exercise covers a simple spatial function, the Buffer. Spatial functions are explained in later lessons.
 
- 1. Open QGIS and import ``wa_faults_100k.shp`` ![Spatial Data Bootcamp: Vector Analysis - add vector data]({{BASE_PATH}}{{ASSET_PATH}}/images/add-vector.png)<br>**fault_100k.shp**<br>
+ 1. Open QGIS and import **faults_100k.shp** through iRods:<br>&nbsp;&nbsp;&nbsp;``/iplant/home/shared/aegis/Spatial-bootcamp/data-collection/faults_100k.shp``<br><br>Or download, unzip, and **Add Vector Layer** ![Spatial Data Bootcamp: Vector Analysis - add vector data]({{BASE_PATH}}{{ASSET_PATH}}/images/add-vector.png):<br>[fault_100k.zip](http://de.iplantcollaborative.org/dl/d/89266810-F642-4538-98DA-C721CB172F1F/fault_100k.zip)<br>
   <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-1.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-1.png" alt="Spatial Data Bootcamp: Vector Analysis - streams and faults"/>
  1. Buffer fault lines to 100m:
    * <em>Menu Bar > Vector > Geoprocessing Tools > Buffer(s)</em>
@@ -55,7 +54,18 @@ This follow exercise covers a simple spatial function, the Buffer. Spatial funct
    <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-5.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-5.png"  atl="Spatial Data Bootcamp: Vector Analysis - buffer vector"/>
  1. Confirm 100 meter buffer on faults:
    * Open measure tool ![Spatial Data Bootcamp: Vector Analysis - measure tool]({{BASE_PATH}}{{ASSET_PATH}}/images/measure-tool.png) and confirm 200 meter total width (100 meters * 2 = 200 meters)<br>
-   <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" alt="Spatial Data Bootcamp: Vector Analysis - measure faults buffer"/><br>You've now tackled a large issue related to map units. Move on to the next lesson. No need to save the document or files.
+   <img data-featherlight="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" src="{{BASE_PATH}}{{ASSET_PATH}}/images/buffer-6.png" alt="Spatial Data Bootcamp: Vector Analysis - measure faults buffer"/>
+   
+You've now tackled a large issue related to map units and projections. Not necessarily the buffer, but the consequences of not knowing understanding your data before working with it.
+
+It's always good practice to check the metadata before working with it.
+
+You do not need to save this project or the data.
+
+<!--
+----
+
+
 
 References: 
 
@@ -64,3 +74,4 @@ References:
 [^2]: [http://docs.qgis.org/2.6/en/docs/index.html](http://docs.qgis.org/2.6/en/docs/index.html)
 
 [^3]: [http://www.gdal.org/gdal_rasterize.html](http://www.gdal.org/gdal_rasterize.html)
+-->
